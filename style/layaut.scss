@@ -1,0 +1,72 @@
+body{
+  background: url("f.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  .app {
+    width: 80%;
+    height:80%;
+    background: rgba(#2A3F54,.5);
+    &::before{
+      width: 100%;
+      height: 100%;
+      background: rgba(black,.5);
+      content: '';
+      position: absolute;
+      left:0;
+      top:0;
+      z-index:-10;
+    }
+    .conteniedo, header {
+      width: 100%
+    }
+    .conteniedo {
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      .puzzle{
+        .control-bar{
+          div{
+            display: flex;
+            justify-content: space-around;
+            margin: .5em auto;
+            align-items: center;
+            .shuffle-button, .solve-button{
+              display: block;
+            }
+          }
+
+        }
+      }
+    }
+    header {
+      background: #172D44;
+      height: 15%;
+      line-height:2;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      border-bottom:1px solid white;
+      h1 {
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+.cell{
+  position: absolute;
+  img {
+    width: 100%;
+    height:100%;
+  }
+}
+

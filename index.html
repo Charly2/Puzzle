@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <title>Sliding Puzzle</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Satisfy" type="text/css">
+        <link rel="stylesheet" href="style/puzzle.css" type="text/css">
+        <link rel="stylesheet" href="style/layaut.css" type="text/css">
+        <link rel="stylesheet" href="style/sweetalert.css" type="text/css">
+        <script src="src/jquery.js"></script>
+        <script src="src/sweetalert.min.js"></script>
+        <script src="vendor/underscore-min.js"></script>
+        <script src="src/shared.js"></script>
+        <script src="src/grid.js"></script>
+        <script src="src/solver.js"></script>
+        <script src="src/puzzle.js"></script>
+    </head>
+    <body style="overflow: hidden">
+        <div class="app">
+            <header><h1>Puzzle IA 4*4</h1></header>
+            <div class="conteniedo">
+                <div id="puzzle"></div>
+            </div>
+        </div>
+        <script>
+
+            var puzzle = new Puzzle($('#puzzle'))
+        </script>   
+    </body>
+</html>

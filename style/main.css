@@ -1,0 +1,175 @@
+.puzzle-container {
+  width: 425px;
+  height: 475px;
+  overflow: hidden;
+}
+.puzzle {
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  position: relative;
+  width: 425px;
+  height: 475px;
+  font-family: sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+}
+.puzzle .overlay-container {
+  width: 425px;
+  height: 425px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(32,32,32,0.25);
+}
+.puzzle .overlay-container .overlay {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 162.5px;
+  left: 162.5px;
+  z-index: 20;
+  background-color: #202020;
+  opacity: 0.8;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  line-height: 100px;
+  color: #ccc;
+  text-align: center;
+}
+.puzzle .control-bar {
+  margin-top: 430px;
+  padding: 0 5px;
+/*.title-text
+      fg-color = #999
+      text-align center
+      width 50px
+      line-height inner-controller-height
+      font-size 30px
+      color fg-color
+      font-family Satisfy, serif
+      text-shadow darken(fg-color, 25%) 0 -1px 1px, lighten(fg-color, 25%) 0 1px 1px*/
+}
+.puzzle .control-bar .shuffle-button,
+.puzzle .control-bar .solve-button {
+  font-weight: bold;
+  font-size: 15px;
+}
+.puzzle .control-bar .shuffle-button {
+  color: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  background: #607d8b;
+  -webkit-transform: all 0.5s;
+  -ms-transform: all 0.5s;
+  transform: all 0.5s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  width: 122.5px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+/*&:active
+      background-image-linear-gradient(darken(bg, 10%), darken(bg, 30%))
+      text-shadow lighten(bg, 5%) 1px 1px 2px, darken(bg, 45%) -1px -1px 2px
+      box-shadow("inset -3px -3px 3px 0px rgba(255, 255, 255, 0.15), inset 3px 3px 3px rgba(0, 0, 0, 0.25)")*/
+}
+.puzzle .control-bar .shuffle-button:hover {
+  color: #fff;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: all 0.5s;
+  -ms-transform: all 0.5s;
+  transform: all 0.5s;
+}
+.puzzle .control-bar .solve-button {
+  color: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  background: #01579b;
+  -webkit-transform: all 0.5s;
+  -ms-transform: all 0.5s;
+  transform: all 0.5s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  width: 122.5px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+/*&:active
+      background-image-linear-gradient(darken(bg, 10%), darken(bg, 30%))
+      text-shadow lighten(bg, 5%) 1px 1px 2px, darken(bg, 45%) -1px -1px 2px
+      box-shadow("inset -3px -3px 3px 0px rgba(255, 255, 255, 0.15), inset 3px 3px 3px rgba(0, 0, 0, 0.25)")*/
+}
+.puzzle .control-bar .solve-button:hover {
+  color: #fff;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: all 0.5s;
+  -ms-transform: all 0.5s;
+  transform: all 0.5s;
+}
+.puzzle .cell {
+  position: absolute;
+  font-size: 35px;
+}
+.puzzle .cell.dark {
+  color: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  background: #1abb9c;
+  -webkit-transform: all 0.5s;
+  -ms-transform: all 0.5s;
+  transform: all 0.5s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  width: 98px;
+  height: 98px;
+  line-height: 98px;
+  text-align: center;
+}
+.puzzle .cell.light {
+  color: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  background: #1abb9c;
+  -webkit-transform: all 0.5s;
+  -ms-transform: all 0.5s;
+  transform: all 0.5s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  width: 98px;
+  height: 98px;
+  line-height: 98px;
+  text-align: center;
+}
