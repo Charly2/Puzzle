@@ -245,7 +245,7 @@ class @Puzzle
           swal({
             title: "Se genero tu tablero",
             text: "Comienza a resolverlo.",
-            imageUrl: "/img/thumbs-up.jpg"
+            imageUrl: "img/thumbs-up.jpg"
           });
 
   handleSolveClicked: ->
